@@ -5,23 +5,23 @@
 class Dblab < Formula
   desc "A CLI tool for practicing real-world debugging skills"
   homepage "https://github.com/Lokesh-Kudipudi/DebugLab"
-  version "1.0.5"
+  version "1.0.6"
 
   on_macos do
     on_intel do
-      url "https://github.com/Lokesh-Kudipudi/DebugLab/releases/download/v1.0.5/DebugLab_Darwin_x86_64.tar.gz"
-      sha256 "04b0ab2a1860ded688e09337aa73422ae4d361c0a9d83665b8bd7964e3dd820f"
+      url "https://github.com/Lokesh-Kudipudi/DebugLab/releases/download/v1.0.6/DebugLab_Darwin_x86_64.tar.gz"
+      sha256 "7464f6b62242e2fed691faa7c7442911dec7ea9e23b43055dec312ae7d64194a"
 
       def install
-        bin.install "DebugLab"
+        bin.install "dblab"
       end
     end
     on_arm do
-      url "https://github.com/Lokesh-Kudipudi/DebugLab/releases/download/v1.0.5/DebugLab_Darwin_arm64.tar.gz"
-      sha256 "b7fb9b83245e00edda41bab108f3c94fa0a8cfe66d166e9a975cb73c83d65411"
+      url "https://github.com/Lokesh-Kudipudi/DebugLab/releases/download/v1.0.6/DebugLab_Darwin_arm64.tar.gz"
+      sha256 "27483f61cd84d6f1125104af8684dcb4369219176df481912730a276e4b7f9ac"
 
       def install
-        bin.install "DebugLab"
+        bin.install "dblab"
       end
     end
   end
@@ -29,21 +29,21 @@ class Dblab < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Lokesh-Kudipudi/DebugLab/releases/download/v1.0.5/DebugLab_Linux_x86_64.tar.gz"
-        sha256 "c78cbbee23d8551a5b34a0babd4b2ccbe2f281a773ab5af1f6c121044dcceca5"
+        url "https://github.com/Lokesh-Kudipudi/DebugLab/releases/download/v1.0.6/DebugLab_Linux_x86_64.tar.gz"
+        sha256 "6cb04ec5ca99eb6ae9f78067b810f77c602973622e0306f07475f154a939df3d"
 
         def install
-          bin.install "DebugLab"
+          bin.install "dblab"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Lokesh-Kudipudi/DebugLab/releases/download/v1.0.5/DebugLab_Linux_arm64.tar.gz"
-        sha256 "fa262f29c325d498c079bdfef81bc489c687c0180f9b1875eff9be7c243e90c2"
+        url "https://github.com/Lokesh-Kudipudi/DebugLab/releases/download/v1.0.6/DebugLab_Linux_arm64.tar.gz"
+        sha256 "357c252d311ee188cd13ab67301f089f5b735656b78433e44fe3b17565f34dd7"
 
         def install
-          bin.install "DebugLab"
+          bin.install "dblab"
         end
       end
     end
